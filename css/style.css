@@ -1,0 +1,244 @@
+header{width: 100%;
+        height: 80px;
+        background:#f1f1f1;
+     position: relative;
+}
+#container{background-color:#fff;
+        width: 100%;
+        min-height: 1000px;
+
+}
+#input {width:  40.5em;
+        height:2.9em;
+      
+        margin-left: 150px;
+        position: relative;
+        margin-top: 10px;
+       
+        
+}
+#input input[type="text"]{height: 30px;
+	width: 580px;
+        margin-top: 10px;
+	border:1px solid rgba(0,0,0,.2);
+	padding: 2%;
+	background-image: url(./images/arrow.png);
+	background-repeat: no-repeat;
+	background-size: 4.5%;
+	background-position: right;
+	box-sizing:border-box;
+	font-size: 16px;
+                       
+                       
+                       
+}
+#input input[type="submit"]{width: 60px;
+	background-color:#4683ea;
+	height: 30px;
+	color: transparent;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border:none;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+
+}
+
+
+ 
+
+
+
+
+
+                   
+
+
+#logo{
+        
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    top: 1px;
+    float: left;
+    
+        
+}
+
+#logo img{width:80px;
+height: 40px;
+
+margin: 15px 0 15px 20px;
+    
+}
+header #me{width: 100px;
+           height: 100px;
+           float: right;
+           margin-right: 20px;
+           margin-top: -50px;
+}
+header #me img{border-radius: 100px;
+              float: right;
+              margin: 10px;
+              width: 30px;
+               height: 30px;
+              
+  
+  }
+ 
+
+                     
+ 
+ 
+
+header #notification img{
+                         width: 30px;
+                         height: 30px;
+                          background-color: #f1f1f1;;
+                          float: right;
+                         margin-top: -50px;
+                         margin-right: -50px;
+                         padding: 10px;
+                         
+ 
+
+
+}
+header #apps{width: 30px;
+            height: 30px;
+            float: right;
+
+}
+
+header #apps img{width: 30px;
+                height: 30px;
+                float: right;
+                margin-top: -40px;
+                
+
+}
+*.clear{clear: both;}
+
+
+#container{width: 100%;
+           min-height: 900px;
+         
+
+
+
+
+}
+.menu{width: 100%;
+      height: 20px;
+      border:1px solid #f1f1f1;
+      background-color:white;
+      padding: 30px;
+      font-size: 20px;
+      
+
+}
+.menu select{color: red;
+        
+        border: none;
+        font-size: 20px;
+        float: left;
+
+}
+
+.option  {     
+               width: 100px;
+                float: left;
+                margin-left: 50px;
+                
+                padding: 0px;
+
+}
+.refresh{      width: 100px;
+                margin: 0px;
+                padding: 0px;
+
+                float: left;}
+
+
+
+ .forwardback {width: 100px;
+              padding-left: 680px; 
+              margin-top: -31px;
+              float: left;}
+
+
+  .setting{width: 100px;
+              padding-left: 1110px; 
+              margin-top: -30px;
+              float: left;}
+           
+
+
+#tab_bar{
+        width: 100%;
+        
+        height: 50px;
+
+}
+
+.compose{float: left;
+         width: 150px;
+         height: 50px;
+         font-size: 16px;
+         font-family: sans-serif;
+         font-weight: bold;
+         border: none;
+         text-align: center;
+         color: white;
+         background: red;
+
+
+}
+
+  .primary{margin-left: 200px;
+          width: 150px;
+          height: 30px;
+          text-align: center;
+          padding: 10px;
+          background-color:#f1f1f1;
+           border: 1px solid gray;
+          float: left;}
+
+
+
+  .social{float: left;
+         border: 1px solid gray;
+          height: 30px;
+          width: 200px;
+          padding: 5px 0px 15px 5px;
+          background-color: #f1f1f1;
+          
+  }
+
+
+
+
+
+  .promotion{float: left;
+          width: 200px;
+           border: 1px solid gray;
+          height: 30px;
+          background-color: #f1f1f1;
+          
+          padding: 10px;
+         
+  
+  
+  }
+  
+
+   aside{width: 150px;
+            height:900px;
+            background-color:#f1f1f1;
+            margin-bottom: 100px;
+
+
+}
+button{margin-bottom: 100px;}
