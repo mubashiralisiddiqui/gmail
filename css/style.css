@@ -135,22 +135,62 @@ header #apps img{width: 30px;
       border:1px solid #f1f1f1;
       background-color:white;
       padding: 30px;
+      position: relative;
       font-size: 20px;
-      
 
 }
-.menu select{color: red;
-        
-        border: none;
-        font-size: 20px;
-        float: left;
+ul.dropdown .gmail a{color: red;
+         font-size: 18px;
+         text-align: center;
+}
 
+
+
+ul.dropdown{outline: 1px solid cadetblue;
+                padding: 0px ;
+
+}
+  ul.dropdown,ul.submenu{ float: left;;
+                display: block;
+                width: 80px;
+                height: 20px;
+                margin-top: 0px;
+                margin-left: -10px;
+               list-style: none;
+        
+}
+
+ul.dropdown li{
+             position: relative;
+
+                       
+}
+
+ul.dropdown a{display: block;
+            
+
+              background-color: white;
+              width: 80px;
+              height: 20px;
+              text-decoration: none;
+}
+ul.submenu li{background-color: lightblue;
+
+}
+ul.submenu li:hover a{background-color: lightgray;}
+
+
+ul.dropdown ul.submenu{display: none;}
+
+ul.dropdown li:hover ul.submenu {display:block;
+                                
+                                
 }
 
 .option  {     
                width: 100px;
                 float: left;
-                margin-left: 50px;
+                margin-left: 90px;
                 
                 padding: 0px;
 
@@ -170,10 +210,19 @@ header #apps img{width: 30px;
 
 
   .setting{width: 100px;
-              padding-left: 1110px; 
+              padding-left: -110px; 
               margin-top: -30px;
               float: left;}
-           
+
+   .service-list {
+    list-style-type: none;
+    margin-left:0px;
+    padding-left:0px;
+    display: inline-block;
+}
+     .service-list img{float: left;
+                        margin-top: -20px;
+     }      
 
 
 #tab_bar{
@@ -183,19 +232,27 @@ header #apps img{width: 30px;
 
 }
 
-.compose{float: left;
-         width: 150px;
-         height: 50px;
-         font-size: 16px;
+.compose button{float: left;
+         width: 110px;
+         height: 30px;
+         font-size: 11px;
          font-family: sans-serif;
          font-weight: bold;
          border: none;
          text-align: center;
          color: white;
-         background: red;
+         margin-top: 10px;
+         margin-left: 20px;
+         background-color: #d14836;
+         border-radius: 1px;
+         text-transform: uppercase;
 
 
 }
+.compose button:hover{background-color:#BA0734;
+                      
+}
+
 
   .primary{margin-left: 200px;
           width: 150px;
@@ -236,9 +293,54 @@ header #apps img{width: 30px;
 
    aside{width: 150px;
             height:900px;
-            background-color:#f1f1f1;
+            background-color:white;
             margin-bottom: 100px;
 
 
 }
-button{margin-bottom: 100px;}
+
+ul#drop_nav li#inbox1 a{color: red ;}
+ ul#drop_nav,ul.less{list-style: none;
+                        padding: 0px;
+                        text-transform: capitalize;
+                        text-decoration: none;
+    }
+
+
+ul#drop_nav ul.less{line-height: 2px;}
+ul#drop_nav li{position: relative;
+                width: 90px;
+                margin-top: 10px;
+               
+            
+}
+
+ ul#drop_nav a {
+                display: block;
+                text-decoration:none;
+                color: black;
+                line-height: 1em;
+                width: 85px;
+                height: 70
+                
+ }
+
+
+
+
+
+
+ ul#drop_nav li:hover > a{background-color: lightgray;
+
+ 
+ }
+ul#drop_nav ul.less{visibility: hidden;
+                    position: absolute;
+}
+
+
+ul#drop_nav li:hover .less{visibility: visible;
+                            
+
+
+}

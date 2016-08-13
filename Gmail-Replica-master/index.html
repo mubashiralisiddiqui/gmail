@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Inbox (49)-nooraliyahoo95@gmail.com</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+
+
+
+</head>
+<body>
+<header>
+		<div class ="center">
+			<div id="logo"><img src="images/logo.png" title="Gmail"></div>
+				<div id="search"> 
+				<input type="text"><input  type="submit">
+				</div>
+					
+					<div id="icons">
+						<div id="image"><img src="images/my.jpg"></div>
+						<div id="bell"><i class="fa fa-bell" aria-hidden="true"></i></div>
+						<div id="dots"><i class="glyphicon glyphicon-th" aria-hidden="true"></i></div>
+				      <div class="clear"></div>
+					
+					</div>
+
+
+				<div class="clear"></div>
+		</div>
+</header>
+<!-- header end  -->
+<div id="container"> 
+		<div class="center">
+						<div class="menu btn-group open">
+  				<a class="btn gmail" href="#"> Gmail</a>
+  			<a class="btn  dropdown-toggle" data-toggle="dropdown" href="#">
+   			 <span class="fa fa-caret-down"></span>
+  				</a>
+ 			 <ul class="dropdown-menu">
+   			 <li class="gmail"><a href="#">Gmail</a></li>
+    				<li><a href="#"> Contacts</a></li>
+    			<li><a href="#">Tasks</a></li>
+    
+  				</ul>
+						</div>
+
+
+<div id="button">
+<div class="btn-group open marginright">
+  <a class="btn btn-primary" href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+  <a class="btn right btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+	<button class="btn refresh btn-default" type="submit"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i>
+</button>
+<div class="btn-group open">
+  <a class="btn btn-primary" href="#"> More</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Mark all as read</a></li>
+    
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+
+
+
+						<div id="pager">
+		<div class="i btn-group setting open">
+  <a class="btn btn-primary" href="#"> <i class="glyphicon glyphicon-cog" aria-hidden="true"></i></a>
+  <a class="btn btn-primary right dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" ></span>
+  </a>
+   <ul class="  pull-right dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+						<div class="i btn-group">
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+   <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </a>
+ 
+
+  </div>
+  <div class="i padding"><b>1-50</b> of <b>126</b></div>
+
+<div class="clear"></div>
+  </div>
+				<div class="clear"></div>
+
+		</div>
+</div>
+
+
+<!-- 2nd section end -->
+
+
+<div id="mail" ng-init="detail={interset: 'I will become a good developer in future and get the command on multiple languages' , date:'22-07-future'} ; skill=['PHP','Jquery','MySQL','HTML','CSS','C language', 'Wordpress','AJAX', 'Angular JS', 'NodeJS', 'Express js','Gulp', 'ionic', 'Cordova', 'Zend', 'Codeigniter','MangoDB'] ; box=['Inbox(49)','Starred','Sent mail', 'Drafts(2)', 'More']">
+
+
+
+        <div class="center">
+               <div class="float" id="left" >
+    <button type="button" class="btn btn-danger">COMPOSE</button>
+<ul >
+  <li ng-repeat="menu in box">
+   <a href="#">{{menu}}</a> 
+  </li>
+
+</ul>
+
+                </div>
+
+            <div class="float" id="right">
+                       <ul class="nav nav-tabs">
+                              <li role="presentation" class="width active"><a href="#"><span class="glyphicon glyphicon-inbox"> Primary</a></li>
+                              <li role="presentation" class="width"><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Social</a></li>
+                              <li role="presentation" class="width"><a href="#"><span class="paddri glyphicon glyphicon-tags">
+                              </span> Promotion</a></li>
+                        </ul>
+
+
+
+
+                          <table class="table table-condensed ">
+                     <tr class="active"ng-repeat="me in skill">
+                    <td id="wide"><input type="checkbox" class="margin"><!-- <i class=" margin fa fa-square-o" aria-hidden="true"></i>  --><i class=" margin right fa fa-star-o" aria-hidden="true"></i> {{ me }}</td>
+                    <td>{{detail.interset}}</td>
+                    <td id="alignright">{{detail.date}}</td>
+                    </tr>
+                  
+                    
+                         </table>
+
+
+
+            </div>
+
+        <div class="clear"></div>
+
+        </div>
+  
+
+
+</div>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Inbox (49)-nooraliyahoo95@gmail.com</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+
+
+
+</head>
+<body>
+<header>
+		<div class ="center">
+			<div id="logo"><img src="images/logo.png" title="Gmail"></div>
+				<div id="search"> 
+				<input type="text"><input  type="submit">
+				</div>
+					
+					<div id="icons">
+						<div id="image"><img src="images/my.jpg"></div>
+						<div id="bell"><i class="fa fa-bell" aria-hidden="true"></i></div>
+						<div id="dots"><i class="glyphicon glyphicon-th" aria-hidden="true"></i></div>
+				      <div class="clear"></div>
+					
+					</div>
+
+
+				<div class="clear"></div>
+		</div>
+</header>
+<!-- header end  -->
+<div id="container"> 
+		<div class="center">
+						<div class="menu btn-group open">
+  				<a class="btn gmail" href="#"> Gmail</a>
+  			<a class="btn  dropdown-toggle" data-toggle="dropdown" href="#">
+   			 <span class="fa fa-caret-down"></span>
+  				</a>
+ 			 <ul class="dropdown-menu">
+   			 <li class="gmail"><a href="#">Gmail</a></li>
+    				<li><a href="#"> Contacts</a></li>
+    			<li><a href="#">Tasks</a></li>
+    
+  				</ul>
+						</div>
+
+
+<div id="button">
+<div class="btn-group open marginright">
+  <a class="btn btn-primary" href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+  <a class="btn right btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+	<button class="btn refresh btn-default" type="submit"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i>
+</button>
+<div class="btn-group open">
+  <a class="btn btn-primary" href="#"> More</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Mark all as read</a></li>
+    
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+
+
+
+						<div id="pager">
+		<div class="i btn-group setting open">
+  <a class="btn btn-primary" href="#"> <i class="glyphicon glyphicon-cog" aria-hidden="true"></i></a>
+  <a class="btn btn-primary right dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" ></span>
+  </a>
+   <ul class="  pull-right dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+						<div class="i btn-group">
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+   <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </a>
+ 
+
+  </div>
+  <div class="i padding"><b>1-50</b> of <b>126</b></div>
+
+<div class="clear"></div>
+  </div>
+				<div class="clear"></div>
+
+		</div>
+</div>
+
+
+<!-- 2nd section end -->
+
+
+<div id="mail" ng-init="detail={interset: 'I will become a good developer in future and get the command on multiple languages' , date:'22-07-future'} ; skill=['PHP','Jquery','MySQL','HTML','CSS','C language', 'Wordpress','AJAX', 'Angular JS', 'NodeJS', 'Express js','Gulp', 'ionic', 'Cordova', 'Zend', 'Codeigniter','MangoDB'] ; box=['Inbox(49)','Starred','Sent mail', 'Drafts(2)', 'More']">
+
+
+
+        <div class="center">
+               <div class="float" id="left" >
+    <button type="button" class="btn btn-danger">COMPOSE</button>
+<ul >
+  <li ng-repeat="menu in box">
+   <a href="#">{{menu}}</a> 
+  </li>
+
+</ul>
+
+                </div>
+
+            <div class="float" id="right">
+                       <ul class="nav nav-tabs">
+                              <li role="presentation" class="width active"><a href="#"><span class="glyphicon glyphicon-inbox"> Primary</a></li>
+                              <li role="presentation" class="width"><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Social</a></li>
+                              <li role="presentation" class="width"><a href="#"><span class="paddri glyphicon glyphicon-tags">
+                              </span> Promotion</a></li>
+                        </ul>
+
+
+
+
+                          <table class="table table-condensed ">
+                     <tr class="active"ng-repeat="me in skill">
+                    <td id="wide"><input type="checkbox" class="margin"><!-- <i class=" margin fa fa-square-o" aria-hidden="true"></i>  --><i class=" margin right fa fa-star-o" aria-hidden="true"></i> {{ me }}</td>
+                    <td>{{detail.interset}}</td>
+                    <td id="alignright">{{detail.date}}</td>
+                    </tr>
+                  
+                    
+                         </table>
+
+
+
+            </div>
+
+        <div class="clear"></div>
+
+        </div>
+  
+
+
+</div>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Inbox (49)-nooraliyahoo95@gmail.com</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+
+
+
+</head>
+<body>
+<header>
+		<div class ="center">
+			<div id="logo"><img src="images/logo.png" title="Gmail"></div>
+				<div id="search"> 
+				<input type="text"><input  type="submit">
+				</div>
+					
+					<div id="icons">
+						<div id="image"><img src="images/my.jpg"></div>
+						<div id="bell"><i class="fa fa-bell" aria-hidden="true"></i></div>
+						<div id="dots"><i class="glyphicon glyphicon-th" aria-hidden="true"></i></div>
+				      <div class="clear"></div>
+					
+					</div>
+
+
+				<div class="clear"></div>
+		</div>
+</header>
+<!-- header end  -->
+<div id="container"> 
+		<div class="center">
+						<div class="menu btn-group open">
+  				<a class="btn gmail" href="#"> Gmail</a>
+  			<a class="btn  dropdown-toggle" data-toggle="dropdown" href="#">
+   			 <span class="fa fa-caret-down"></span>
+  				</a>
+ 			 <ul class="dropdown-menu">
+   			 <li class="gmail"><a href="#">Gmail</a></li>
+    				<li><a href="#"> Contacts</a></li>
+    			<li><a href="#">Tasks</a></li>
+    
+  				</ul>
+						</div>
+
+
+<div id="button">
+<div class="btn-group open marginright">
+  <a class="btn btn-primary" href="#"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+  <a class="btn right btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+	<button class="btn refresh btn-default" type="submit"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i>
+</button>
+<div class="btn-group open">
+  <a class="btn btn-primary" href="#"> More</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Mark all as read</a></li>
+    
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+
+
+
+						<div id="pager">
+		<div class="i btn-group setting open">
+  <a class="btn btn-primary" href="#"> <i class="glyphicon glyphicon-cog" aria-hidden="true"></i></a>
+  <a class="btn btn-primary right dropdown-toggle" data-toggle="dropdown" href="#">
+    <span class="fa fa-caret-down" ></span>
+  </a>
+   <ul class="  pull-right dropdown-menu">
+    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+  </ul>
+</div>
+						<div class="i btn-group">
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+   <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </a>
+ 
+
+  </div>
+  <div class="i padding"><b>1-50</b> of <b>126</b></div>
+
+<div class="clear"></div>
+  </div>
+				<div class="clear"></div>
+
+		</div>
+</div>
+
+
+<!-- 2nd section end -->
+
+
+<div id="mail" ng-init="detail={interset: 'I will become a good developer in future and get the command on multiple languages' , date:'22-07-future'} ; skill=['PHP','Jquery','MySQL','HTML','CSS','C language', 'Wordpress','AJAX', 'Angular JS', 'NodeJS', 'Express js','Gulp', 'ionic', 'Cordova', 'Zend', 'Codeigniter','MangoDB'] ; box=['Inbox(49)','Starred','Sent mail', 'Drafts(2)', 'More']">
+
+
+
+        <div class="center">
+               <div class="float" id="left" >
+    <button type="button" class="btn btn-danger">COMPOSE</button>
+<ul >
+  <li ng-repeat="menu in box">
+   <a href="#">{{menu}}</a> 
+  </li>
+
+</ul>
+
+                </div>
+
+            <div class="float" id="right">
+                       <ul class="nav nav-tabs">
+                              <li role="presentation" class="width active"><a href="#"><span class="glyphicon glyphicon-inbox"> Primary</a></li>
+                              <li role="presentation" class="width"><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Social</a></li>
+                              <li role="presentation" class="width"><a href="#"><span class="paddri glyphicon glyphicon-tags">
+                              </span> Promotion</a></li>
+                        </ul>
+
+
+
+
+                          <table class="table table-condensed ">
+                     <tr class="active"ng-repeat="me in skill">
+                    <td id="wide"><input type="checkbox" class="margin"><!-- <i class=" margin fa fa-square-o" aria-hidden="true"></i>  --><i class=" margin right fa fa-star-o" aria-hidden="true"></i> {{ me }}</td>
+                    <td>{{detail.interset}}</td>
+                    <td id="alignright">{{detail.date}}</td>
+                    </tr>
+                  
+                    
+                         </table>
+
+
+
+            </div>
+
+        <div class="clear"></div>
+
+        </div>
+  
+
+
+</div>
+
+
+</body>
+</html>
