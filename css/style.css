@@ -96,7 +96,7 @@ header #me img{border-radius: 100px;
 header #notification img{
                          width: 30px;
                          height: 30px;
-                          background-color: #f1f1f1;;
+                          background-color: #f1f1f1;
                           float: right;
                          margin-top: -50px;
                          margin-right: -50px;
@@ -122,7 +122,7 @@ header #apps img{width: 30px;
 *.clear{clear: both;}
 
 
-#container{width: 100%;
+#container{width: 1024px;
            min-height: 900px;
          
 
@@ -130,7 +130,7 @@ header #apps img{width: 30px;
 
 
 }
-.menu{width: 100%;
+.menu{width: 1190px;
       height: 20px;
       border:1px solid #f1f1f1;
       background-color:white;
@@ -204,27 +204,66 @@ ul.dropdown li:hover ul.submenu {display:block;
 
 
  .forwardback {width: 100px;
-              padding-left: 680px; 
+              padding-left: 635px; 
               margin-top: -31px;
               float: left;}
 
 
   .setting{width: 100px;
-              padding-left: -110px; 
-              margin-top: -30px;
+              padding-left: 980px; 
+              margin-top: -31px;
               float: left;}
 
-   .service-list {
+ ul.service-list{float: left;}
+
+   ul.service-list,.setingsublist {
     list-style-type: none;
     margin-left:0px;
-    padding-left:0px;
+    
     display: inline-block;
+    position: absolute;
+   
 }
-     .service-list img{float: left;
-                        margin-top: -20px;
-     }      
+     .service-list img{
+                        margin-top: -22px;
+                        position: relative;
+                        float: left;
+                       
+     }   
 
+     ul.service-list li a{text-decoration:none;}
+     li.imgsetting{float: left;}
 
+    input[type="checkbox"] :before {
+  border: 1px solid red;}
+
+     ul.setingsublist{font-size: 14px;
+                   
+                    
+                    border: 1px solid lightgray;
+                    padding-left: 12px;
+                    padding-top: 5px;
+                   width: 152px;
+                   margin-left: -167px;
+     }
+.setingsublist li{margin-top: 15px;
+                  display: block;
+                  border-radius: 1px;
+                  padding:2px;
+                   width: 165px;
+                
+                               
+}
+.setingsublist li:hover{background-color:#f1f1f1;}
+
+ul.setingsublist {display: block;}
+
+ ul.service-list li.settingsublist:hover ul.settingsublist{
+                                
+                                 display: block;
+         
+         
+         }
 #tab_bar{
         width: 100%;
         
@@ -334,12 +373,12 @@ ul#drop_nav li{position: relative;
 
  
  }
-ul#drop_nav ul.less{visibility: hidden;
+ul#drop_nav ul.less{display:none;
                     position: absolute;
 }
 
 
-ul#drop_nav li:hover .less{visibility: visible;
+ul#drop_nav li:hover .less{display: block;
                             
 
 
