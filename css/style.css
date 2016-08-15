@@ -214,56 +214,57 @@ ul.dropdown li:hover ul.submenu {display:block;
               margin-top: -31px;
               float: left;}
 
- ul.service-list{float: left;}
 
-   ul.service-list,.setingsublist {
-    list-style-type: none;
-    margin-left:0px;
-    
-    display: inline-block;
-    position: absolute;
+
+   ul.service_list,ul.sublist {
+    list-style: none;
+    display: block;
+    text-transform: capitalize;
    
 }
-     .service-list img{
-                        margin-top: -22px;
-                        position: relative;
-                        float: left;
-                       
-     }   
-
-     ul.service-list li a{text-decoration:none;}
-     li.imgsetting{float: left;}
-
-    input[type="checkbox"] :before {
-  border: 1px solid red;}
-
-     ul.setingsublist{font-size: 14px;
-                   
-                    
-                    border: 1px solid lightgray;
-                    padding-left: 12px;
-                    padding-top: 5px;
-                   width: 152px;
-                   margin-left: -167px;
+   
+   ul.service_list li{position: relative;
+                         width: 90px;
+                         margin-top: -20px;
+      }
+ul.service_list a {
+                display: block;
+                text-decoration:none;
+                color: black;
+                width: 100px;
+                height: 70
+                }
+ul.sublist li a{width: 10px;}
+ ul.sublist{font-size: 14px;            
+            border: 1px solid lightgray;
+           padding-left: 10px ;
+           width: 162px;
+           margin-left: -100px;
      }
-.setingsublist li{margin-top: 15px;
-                  display: block;
-                  border-radius: 1px;
-                  padding:2px;
-                   width: 165px;
-                
-                               
+ul.sublist li{margin-top: 15px;
+                        display: inline-block;
+                        border-radius: 1px;
+                        
+                        width: 165px;   
 }
-.setingsublist li:hover{background-color:#f1f1f1;}
+.sublist li:hover{background-color:#f1f1f1;}
 
-ul.setingsublist {display: block;}
 
- ul.service-list li.settingsublist:hover ul.settingsublist{
+ul.service_list ul.sublist{display:none;
+                                  position: absolute;
+}
+
+
+ ul.service_list li:hover .sublist {
                                 
                                  display: block;
+ }
          
-         
+         .bsetting{border: none;
+                  background-color: #f1f1f1;
+                  width: 72px;
          }
+         
 #tab_bar{
         width: 100%;
         
@@ -314,7 +315,11 @@ ul.setingsublist {display: block;}
   }
 
 
-
+.promotion:hover{background-color: white;}
+.social:hover{background-color: white;}
+.primary:hover{background-color: white;
+               
+ }
 
 
   .promotion{float: left;
@@ -342,7 +347,7 @@ ul#drop_nav li#inbox1 a{color: red ;}
  ul#drop_nav,ul.less{list-style: none;
                         padding: 0px;
                         text-transform: capitalize;
-                        text-decoration: none;
+                       
     }
 
 
@@ -364,15 +369,9 @@ ul#drop_nav li{position: relative;
                 
  }
 
-
-
-
-
-
  ul#drop_nav li:hover > a{background-color: lightgray;
-
- 
  }
+
 ul#drop_nav ul.less{display:none;
                     position: absolute;
 }
